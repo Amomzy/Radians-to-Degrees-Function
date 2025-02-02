@@ -1,6 +1,8 @@
 import math
 
+# Define the function and parameter(s)
 def radians_to_degrees(rad):
+    # Initialize main loop
     while True:
         degrees = rad * (180 / math.pi)
         print(f"{rad:.0f} radians = {degrees:.2f} degrees.")
@@ -12,6 +14,7 @@ def radians_to_degrees(rad):
         while choice not in ["y", "n"]:
             choice = input("Invalid input! Please select 'y' or 'n': ").lower()
 
+        # Get new rad value to keep loop going OR end function
         if choice == "y":
             try:
                 rad = float(input("Enter the new radians: "))
