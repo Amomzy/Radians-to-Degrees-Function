@@ -1,6 +1,5 @@
 import math
 
-
 def radians_to_degrees(rad):
     while True:
         degrees = rad * (180 / math.pi)
